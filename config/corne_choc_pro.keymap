@@ -29,10 +29,10 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp F               &kp P         &kp B      &kp C_MUTE  &kp C_PP  &kp J    &kp L                &kp U               &kp Y    &kp SEMI  &kp BSPC
-&kp LEFT_SHIFT    &kp A  &kp R  &kp S               &kp T         &kp G      &kp LALT    &kp RALT  &kp M    &mt RIGHT_COMMAND N  &kp E               &kp I    &kp O     &kp SQT
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C               &kp D         &kp V                            &kp K    &kp H                &kp COMMA           &kp DOT  &kp FSLH  &kp ESC
-                                &mt LGUI BACKSPACE  &lt 1 ESCAPE  &kp SPACE                        &kp RET  &lt 2 SEMICOLON      &mt RALT BACKSPACE
+&kp TAB           &kp Q  &kp W  &kp F               &kp P         &kp B      &kp C_MUTE  &kp C_PP  &kp J    &kp L            &kp U               &kp Y    &kp SEMI  &kp BSPC
+&kp LEFT_SHIFT    &kp A  &kp R  &kp S               &kp T         &kp G      &kp LALT    &kp RALT  &kp M    &mt RGUI N       &kp E               &kp I    &kp O     &kp SQT
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C               &kp D         &kp V                            &kp K    &kp H            &kp COMMA           &kp DOT  &kp FSLH  &kp ESC
+                                &mt LGUI BACKSPACE  &lt 1 ESCAPE  &kp SPACE                        &kp RET  &lt 2 SEMICOLON  &mt RALT BACKSPACE
             >;
         };
 
