@@ -13,6 +13,7 @@
 #define RU      1
 #define LOWER   2
 #define RAISE   3
+/* Use LALT on macOS for Ctrl+Option+Space instead of Ctrl+Meta+Space. */
 #define LANG_SWITCH_MOD LGUI
 
 / {
