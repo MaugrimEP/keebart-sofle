@@ -14,7 +14,7 @@
 #define LOWER   2
 #define RAISE   3
 #define CONFIG  4
-/* Use LALT on macOS for Ctrl+Option+Space instead of Ctrl+Meta+Space. */
+/* Default is Ctrl+Meta+Space; change LGUI to LALT on macOS for Ctrl+Option+Space. */
 #define LANG_SWITCH_MOD LGUI
 
 / {
@@ -51,7 +51,7 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        config_layer_hold {
+        config_conditional {
             if-layers = <LOWER RAISE>;
             then-layer = <CONFIG>;
         };
