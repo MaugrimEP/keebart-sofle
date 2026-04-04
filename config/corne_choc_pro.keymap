@@ -13,6 +13,7 @@
 #define RU      1
 #define LOWER   2
 #define RAISE   3
+#define LANG_SWITCH_MOD LGUI
 
 / {
     chosen { zmk,physical-layout = &default_layout; };
@@ -26,9 +27,9 @@
             wait-ms = <40>;
             tap-ms = <40>;
             bindings
-                = <&macro_press &kp LCTRL &kp LGUI>
+                = <&macro_press &kp LCTRL &kp LANG_SWITCH_MOD>
                 , <&macro_tap &kp SPACE>
-                , <&macro_release &kp LCTRL &kp LGUI>
+                , <&macro_release &kp LCTRL &kp LANG_SWITCH_MOD>
                 , <&tog RU>
                 ;
         };
