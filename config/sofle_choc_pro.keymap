@@ -70,17 +70,17 @@
     raise_layer {
       display-name = "raise";
       // ------------------------------------------------------------------------------------------------------------
-      // |       |      |      |       |       |      |                |      |      |       |      |       |       |
-      // |       |      |      |       |       |      |                |      |      |       |      |       |       |
-      // |       |      |      |       |       |      |                |  <-  |  v   |   ^   |  ->  |       |       |
-      // |       |      |      |       |       |      |      |  |      |      |      |       |      |       |       |
-      //                |      |       |       |      |      |  |      |      |      |       |      |
+      // | PG UP |      |      |       |       |      |                |      |      |       |      |       |       |
+      // | PG DN |      |      |       |       |      |                |      |      |       |      |       |       |
+      // | HOME  |      |      |       |       |      |                |  <-  |  v   |   ^   |  ->  |       |       |
+      // | END   |      |      |       |       |      |      |  |      |  +   |  -   |   =   |      |       |       |
+      //                |      |       |       |      |      |  |      |      | DEL  |       |      |
       bindings = <
-        &trans     &trans       &trans       &trans       &trans       &trans                        &trans    &trans    &trans   &trans    &trans  &trans
-        &trans     &trans       &trans       &trans       &trans       &trans                        &trans    &trans    &trans   &trans    &trans  &trans
-        &trans     &trans       &trans       &trans       &trans       &trans                        &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &trans  &trans
-        &trans     &trans       &trans       &trans       &trans       &trans    &trans  &trans      &trans    &trans    &trans   &trans    &trans  &trans
-        &trans       &trans       &trans       &trans        &trans  &trans  &trans    &trans    &trans   &trans
+        &kp PG_UP  &trans       &trans       &trans       &trans       &trans                        &trans    &trans    &trans   &trans    &trans  &trans
+        &kp PG_DN  &trans       &trans       &trans       &trans       &trans                        &trans    &trans    &trans   &trans    &trans  &trans
+        &kp HOME   &trans       &trans       &trans       &trans       &trans                        &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &trans  &trans
+        &kp END    &trans       &trans       &trans       &trans       &trans    &trans  &trans      &kp PLUS  &kp MINUS &kp EQUAL&trans    &trans  &trans
+                      &trans     &trans       &trans       &trans       &trans                    &trans    &trans  &kp DEL     &trans    &trans
       >;
 
       sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
