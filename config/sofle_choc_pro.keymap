@@ -152,7 +152,7 @@
 
     adjust_layer {
       // ----------------------------------------------------------------------------------------------------------------------------
-      // | EXTPWR | BRI_DN  | BRI_UP  | RGB_SAD | RGB_SAI | RGB_EFF |                  | VOL- | VOL+ |       |      |       |       |
+      // | EXTPWR | VOL-    | VOL+    | RGB_SAD | RGB_SAI | RGB_EFF |                  | BRI- | BRI+ |       |      |       |       |
       // | BTCLR  |  BT1    |  BT2    |   BT3   |   BT4   |   BT5   |                  |      |      |       |      |       |       |
       // |        | RGB_BRD | RGB_BRI | RGB_HUD | RGB_HUI |         |                  |      |      |       |      |       |       |
       // |        |         |         |         |         | RGB_TOG | [=NORM | | ]=GAME |    |      |       |      |       |       |
@@ -160,7 +160,7 @@
       // Adjust + [  ->  normal mode (home row mods ON).   Adjust + ]  ->  game mode (home row mods OFF).
       display-name = "adjust";
       bindings = <
-        &ext_power EP_TOG &kp C_BRI_DN     &kp C_BRI_UP     &rgb_ug RGB_SAD &rgb_ug RGB_SAI &rgb_ug RGB_EFF                         &kp C_VOL_DN &kp C_VOL_UP &none &none &none &none
+        &ext_power EP_TOG &kp C_VOL_DN     &kp C_VOL_UP     &rgb_ug RGB_SAD &rgb_ug RGB_SAI &rgb_ug RGB_EFF                         &kp C_BRI_DN &kp C_BRI_UP &none &none &none &none
         &bt BT_CLR        &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                            &none     &none &none &none &none &none
         &none             &rgb_ug RGB_BRD &rgb_ug RGB_BRI &rgb_ug RGB_HUD &rgb_ug RGB_HUI &none                                   &none     &none &none &none &none &none
         &none             &none           &none           &none           &none           &rgb_ug RGB_TOG  &to BASE        &to GAME  &none &none &none &none &none &none
